@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SegV</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+</head>
+<body>
+
+    <div id="top conteudo-principal"></div>
+
+    <div class="cabecalho hidden" id="cabecalho">
+        <img class="logo" src="assets/SEGV.png" alt="">
+        <aside>
+            <nav>
+                <ul class="menu-cabecalho" id="menu-cabecalho">
+                    <li class="item"><a href="#top">Início</a></li>
+                    <li class="item"><a href="#container-2">Sobre</a></li>
+                    <li class="item"><a href="#container-3">Serviços</a></li>
+                    <li class="item"><a href="#container-4">Destaque</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <img src="assets/bars-solid (4).svg" alt="" id="simbolo-menu-mobile" onclick="abrirMenu()">
+        <img src="assets/bars-solid (4).svg" alt="" id="fechar-menu-mobile" onclick="fecharMenu()">
+    </div>
+
+    <div class="menu-mobile" id="menu-mobile">
+        <ul class="links-navegacao">
+            <li class="item-mobile hidden"><a href="#top">Início</a></li>
+            <li class="item-mobile hidden"><a href="#container-2">Sobre</a></li>
+            <li class="item-mobile hidden"><a href="#container-3">Serviços</a></li>
+            <li class="item-mobile hidden"><a href="#container-4">Destaque</a></li>
+        </ul>
+    </div>
+
+    <section class="container-1 conteudo-principal" id="container-1">
+
+        <div class="conteudo-container-1">
+            <div class="texto-container-1">
+                <header class="hidden">
+                    <h1>Líder em soluções de monitoramento e proteção eletrônica</h1>
+                    <p>A segv é uma empresa capacitada para ajudar você. Nós estamos há mais de 10 anos no mercado e sempre disposto a te trazer a melhor experiência, confiabilidade e segurança.</p>
+                    <button class="button hidden-ler"><a href="#">Adquirir</a></button>
+                </header>       
+            </div>
+            <img id="man-front" src="assets/front-man-transformed.png" alt="">         
+        </div>
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+		xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+            <defs>
+                <linearGradient id="bg">
+                    <stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
+                    <stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+                    <stop offset="100%" style="stop-color:rgba(41, 199, 199, 0.2)"></stop>
+                </linearGradient>
+                <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+            </defs>
+            <g>
+                <use xlink:href='#wave' opacity=".3">
+                    <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="translate"
+            dur="10s"
+            calcMode="spline"
+            values="270 230; -334 180; 270 230"
+            keyTimes="0; .5; 1"
+            keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+            repeatCount="indefinite" />
+                </use>
+                <use xlink:href='#wave' opacity=".6">
+                    <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="translate"
+            dur="8s"
+            calcMode="spline"
+            values="-270 230;243 220;-270 230"
+            keyTimes="0; .6; 1"
+            keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+            repeatCount="indefinite" />
+                </use>
+                <use xlink:href='#wave' opacty=".9">
+                    <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="translate"
+            dur="6s"
+            calcMode="spline"
+            values="0 230;-140 200;0 230"
+            keyTimes="0; .4; 1"
+            keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+            repeatCount="indefinite" />
+                </use>
+            </g>
+	    </svg>
+
+    </section>
+
+    <section class="container-2 conteudo-principal" id="container-2">
+
+        <div class="conteudo-container-2">
+            <div class="imagens-container-2">
+                <img src="assets/tec.png" alt="" id="img1-c-2" class="hidden">
+                <img src="assets/download (29).png" alt="" id="img2-c-2" class="hidden">
+            </div>
+            <div class="texto-container-2">
+                <span class="intro-container">SOBRE NÓS</span>
+                <h1 style="text-transform: uppercase; margin-bottom: 7px;">descubra nossa jornada de proteção ao cliente</h1>
+                <p style="text-align: justify;">Devido a grande evolução do mercado de segurança, estamos investindo em treinamentos e pesquisas e contamos com uma equipe comprometida com o bom atendimento de nossos clientes, satisfazendo suas exigências e tirando dúvidas em relação a equipamentos, serviços, projetos e suporte técnico.</p>
+                <p style="text-align: justify; display: none;" id="mais-texto" class="hidden-ler">Devido a grande evolução do mercado de segurança, estamos investindo em treinamentos e pesquisas e contamos com uma equipe comprometida com o bom atendimento de nossos clientes, satisfazendo suas exigências e tirando dúvidas em relação a equipamentos, serviços, projetos e suporte técnico.</p>
+                <div class="botao-container">
+                    <button onclick="lerMais()" id="botao-ler-mais" class="button hidden-ler">ler mais</button>
+                    <button onclick="lerMenos()" id="botao-ler-menos" style="display: none;" class="button hidden-ler">Ler menos</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container-3 conteudo-principal" id="container-3">
+        <div class="conteudo-container-3">
+            <span class="intro-container">Nossos Serviços</span>
+            <h1>monitoramento com integração de i.a intelbras</h1>
+            <p>Revolucionando o mercado através de inovações se adequando cada vez mais as tecnologias presentes, tudo para o melhor suporte ao cliente e suas demandas</p>
+        </div>
+        <div class="servicos">
+
+            <div class="servico-item hidden">
+                <div class="icon-servico">
+                    <img src="assets/target-lock-regular-36.png" alt="">
+                </div>
+                <div class="texto-servico">
+                    <h2>Avaliação de Segurança</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti cumque commodi non odio earum dolore.</p>
+                </div>
+            </div>
+
+            <div class="servico-item hidden">
+                <div class="icon-servico">
+                    <img src="assets/cctv-regular-36.png" alt="">
+                </div>
+                <div class="texto-servico">
+                    <h2>Câmeras</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti cumque commodi non odio earum dolore.</p>
+                </div>
+            </div>
+
+            <div class="servico-item hidden">
+                <div class="icon-servico">
+                    <img src="assets/camera-home-regular-36.png" alt="">
+                </div>
+                <div class="texto-servico">
+                    <h2>Monitoramento</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti cumque commodi non odio earum dolore.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container-4 conteudo-principal" id="container-4">
+        <img src="assets/Image (3).png" alt="" id="img-tec">
+        <div class="conteudo-container-4">
+            <div class="texto-container-4">
+                <span class="intro-container">EM DESTAQUE</span>
+                <h1>Defesa com integração tec</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.</p>
+            </div>
+            <div class="defensa-itens">
+                <div class="defesa-item hidden">
+                    <img src="assets/Customize.png" alt="">
+                    <h3>Soluções Personalizadas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="defesa-item hidden">
+                    <img src="assets/Threat.png" alt="">
+                    <h3>Avaliação de Vulnerabilidade</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="defesa-item hidden">
+                    <img src="assets/24 Hours Service.png" alt="">
+                    <h3>Serviço 24/7</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="defesa-item hidden">
+                    <img src="assets/Training.png" alt="">
+                    <h3>Profissionais Treinados</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
