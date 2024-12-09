@@ -53,7 +53,7 @@
         display: none;
     }
 
-    .intro-container {
+    .container-2 span, .container-4 span {
         text-transform: capitalize;
     }
 
@@ -71,6 +71,11 @@
 
     .defensa-itens {
         justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    }
+
+    .container-2 h1, .container-4 h1{
+        margin-top: 0.5vh;
     }
 }
 
@@ -145,6 +150,16 @@
         align-items: center;
     }
 
+    .container-2 h1, .container-4 h1{
+        margin-top: 0.5vh;
+    }
+
+    .defensa-itens {
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    }
+
+}
         .defensa-itens {
         justify-content: center;
     }
