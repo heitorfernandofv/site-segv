@@ -16,7 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", serif;
+    font-family: "Poppins", serif;    
 }
 
 html {
@@ -318,7 +318,7 @@ svg {
     max-width: 53vh;
     padding: 0.5vh 3vh 3vh 3vh;
     height: auto;
-    box-shadow: 1px 1px 4px white;
+    box-shadow: 2px 2px 30px black;
     transition: all .45s ease;
 }
 
